@@ -75,7 +75,7 @@ pyexample
 </pre>
 
 
-At the root directory, you will need a setup.py file. This file will import a Python package that provides functions to install packages. The package setuptools is recommended for this (the in-built distutils is an older alternative).
+At the root directory, you will need a setup.py file, which will govern the installation of your package. The setuptools package is recommended for this (the in-built distutils is an older alternative).
 
     pip install setuptools
 
@@ -112,11 +112,7 @@ setup(
 )
 ```
 
-Further information on setup options can be found at:
-[PyPA packaging instructions](https://packaging.python.org/tutorials/distributing-packages)
-
-and yet more detailed and up to date information at:
-[The setuptools command reference:](https://setuptools.readthedocs.io/en/latest/setuptools.html#command-reference)
+Further information on setup options can be found at: [PyPA packaging instructions](https://packaging.python.org/tutorials/distributing-packages) and yet more detailed and up to date information at: [The setuptools command reference:](https://setuptools.readthedocs.io/en/latest/setuptools.html#command-reference)
 
 
 The classifiers are not functional, they are for documentation, and will be listed on the PYPI page, once uploaded. It is conventional to include the Python versions supported in this release. A complete list of classifiers is available at:
@@ -166,7 +162,7 @@ If you now pip install again and run the Python interpreter you should be able t
 
 This does create the problem of having two places holding the version, which must also match any release tags created (eg. in git). Various approaches exist for using a single version number. https://packaging.python.org/guides/single-sourcing-package-version/
 
-If you wish to create sub-packages, these should ideally be directories inside the main package (Re-mapping from other locations is possible using the package_dir argument in setup but this can cause a problem with [develop installs](https://github.com/pypa/pip/issues/3160). They will also require an \__init__.py in each sub-package directory.
+If you wish to create sub-packages, these should ideally be directories inside the main package (Re-mapping from other locations is possible using the package_dir argument in setup but this can cause a problem with [develop installs](https://github.com/pypa/pip/issues/3160). The sub-packages also require an \__init__.py in the directory.
 
  
 ### Creating a source distribution
@@ -185,9 +181,9 @@ Create a source distribution. From your root directory:
 
     python setup.py sdist
 
-This creates a dist/ directory containing a compressed archive of the package (e.g. A *.tar.gz file in Linux). This file is your source distribution - you can check it contains what you want. If it does not automatically contain what you want then you might want to use a [MANIFEST](https://docs.python.org/3/distutils/sourcedist.html) file.
+This creates a dist/ directory containing a compressed archive of the package (e.g. <PACKAGE_NAME>-<VERSION>.tar.gz in Linux). This file is your source distribution - you can check it contains what you want. If it does not automatically contain what you want then you might want to use a [MANIFEST](https://docs.python.org/3/distutils/sourcedist.html) file.
 
-Note: A <PROJECT_NAME>.egg-info directory will also be created in your root directory containing meta-data about your distribution. This can safely be deleted if it is not wanted (this is generated even though you have not built an egg format package).
+Note: A <PACKAGE_NAME>.egg-info directory will also be created in your root directory containing meta-data about your distribution. This can safely be deleted if it is not wanted (despite the extension, this is generated even though you have not built an egg format package).
 
 
 ### Creating a wheel (built) distribution
@@ -228,7 +224,7 @@ Go to: https://testpypi.python.org and select Register. Follow instructions.
 
 You will also need a version number. Semantic versioning is recommended (see https://semver.org/ for details). The standard starting version for a project in development is 0.1.0.
 
-Best approach to uploading to PyPI  is to use twine.
+The best approach to uploading to PyPI  is to use twine.
 
     pip install twine
 
