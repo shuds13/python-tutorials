@@ -297,7 +297,7 @@ E.g. To upload all distributions created under dist/
 
     twine upload dist/*
     
-E.g. To upload the source distribution with a gpg signature):
+E.g. To upload the source distribution with a gpg signature:
 
     twine upload dist/pyexample-0.1.0.tar.gz pyexample-0.1.0.tar.gz.asc
 
@@ -311,7 +311,8 @@ The package should pip install. E.g:
 ### Example projects
 
 <!-- Probably rename - not ready for -->
-####pyexample:
+
+#### pyexample:
 
 A small sample project using numpy and mpi4py (used as example above).
 
@@ -323,7 +324,7 @@ Note: To run the mpi4py test use at least 2 processors:
 
 *  `mpiexec -np 2 python module_mpi4py_1.py`
 
-####libensemble:
+#### libensemble:
 An Argonne project that controls ensembles of calculations based on numerical optimization.
 
 Location:
