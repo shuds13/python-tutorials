@@ -1,4 +1,3 @@
-# DRAFT DRAFT DRAFT DRAFT
 # Python: Creating a pip installable package
 
 #### Contributed by [Steve Hudson](https://github.com/shuds13)
