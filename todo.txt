@@ -1,0 +1,9 @@
+ToDo:
+
+python.pypi-packaging.md:
+ - If referring to an existing example repo (currently called pyexample)
+   - Clean up example.
+   - Pref. refer across modules (want example of internal module usage).
+   - Create a script the uses modules that can be run once installed
+   - Clean up and remove non-user comments from python.pypi.md
+  
