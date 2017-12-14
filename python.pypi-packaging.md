@@ -306,7 +306,7 @@ The package should pip install. E.g:
 
 ### Example projects
 
-<!-- Probably rename - not ready for -->
+<!-- Probably rename - need to update content -->
 
 #### pyexample:
 
@@ -314,7 +314,7 @@ A small sample project using numpy and mpi4py (used as example above).
 
 Location:
 
- - \*To be Determined*
+* Github: https://github.com/shuds13/pyexample
  
 Note: To run the mpi4py test use at least 2 processors: 
 
