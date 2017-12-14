@@ -4,7 +4,7 @@
 
 ### Introduction
 
-This is a quickstart guide to Python Packaging with a particular focus on the creation of a PyPI package, which will enable users to "pip install" the package. The document is broken down into sections so that readers may easily skips parts of the process they are already familiar with. All but the final section (Uploading to PyPI), can be undertaken as an exercise to understand Python packaging and test the process, without publising a package on the formal PyPI distribution.
+This is a quickstart guide to Python Packaging with a particular focus on the creation of a PyPI package, which will enable users to "pip install" the package. The document is broken down into sections so that readers may easily skips parts of the process they are already familiar with. All but the final section (Uploading to PyPI), can be undertaken as an exercise to understand Python packaging and test the process, without publishing a package on the formal PyPI distribution.
 
 For a more detailed reference on package creation, see the official Python Packaging Authority (PyPA) [website](https://www.pypa.io).
 
@@ -17,9 +17,9 @@ pip is a package management system, specifically designed for installing Python 
 
     pip install mpi4py
 
-The package can now be imported in Python scripts. You may need to run as sudo if you have root privalages, or append  `--user`  to install under your home directory (often this will be under $HOME/.local).
+The package can now be imported in Python scripts. You may need to run as sudo if you have root privileges, or append  `--user`  to install under your home directory (often this will be under $HOME/.local).
 
-Note: pip3 is used to install Python3 packages, however in some environments the command pip may point to pip3, just as python may point to python3. You can use `which pip` to check this. For this document, examples will show the command simply as pip. 
+Note: pip3 is used to install Python3 packages, however in some environments the command pip may point to pip3, just as python may point to Python3. You can use `which pip` to check this. For this document, examples will show the command simply as pip. 
 
 
 **Tip**: To download a specific version of a package:
@@ -56,7 +56,7 @@ This article gives an overview of how to create an installable Python package.
 
 Note on Ambiguity: The term package can refer to an installable python *package* within a project (a directory containing an \__init__.py file). It can also mean a *distribution package* which refers to the entire distributed part of the project (as in a source distribution - or "tarball"). Such a package may consist of multiple python package/sub-packages. In most cases the context should be sufficient to make the distinction.
 
-A Python project will consist of a root directory with the name of the project. Somewhere inside this will be included a directory which will constitue the main installable package. Most often this has the same  name as the project (This is not compulsory but makes things a bit simpler. <!-- could be link here to issues/faq on this point - package_dir plus problem with develop installs --> Inside that package directory, alongside your python files, create a file called \__init__.py. This file can be empty, and it denotes the directory as a python package. When you pip install, this directory will be installed and become importable.
+A Python project will consist of a root directory with the name of the project. Somewhere inside this will be included a directory which will constitute the main installable package. Most often this has the same  name as the project (This is not compulsory but makes things a bit simpler. <!-- could be link here to issues/faq on this point - package_dir plus problem with develop installs --> Inside that package directory, alongside your python files, create a file called \__init__.py. This file can be empty, and it denotes the directory as a python package. When you pip install, this directory will be installed and become importable.
 
 <!-- This example project may be included - but not currently on github -->
 
@@ -64,7 +64,7 @@ E.g. A simple project may have this structure:
 
 <pre>
 pyexample
-├── LICENCE
+├── LICENSE
 ├── pyexample
 │   ├── __init__.py
 │   ├── module_mpi4py_1.py
@@ -171,7 +171,7 @@ If you wish to create sub-packages, these should ideally be directories inside t
  
 ### Creating a source distribution
 
-It is recommended that all Python projects provide a source distrbution.
+It is recommended that all Python projects provide a source distribution.
 
 PyPI has certain required meta-data that the setup.py should provide. To quickly check if your project has this data use:
 
@@ -185,14 +185,14 @@ Create a source distribution. From your root directory:
 
     python setup.py sdist
 
-This creates a dist/ directory containing a compressed archive of the package (e.g. A *.tar.gz file in linux). This file is your source distribution - you can check it contains what you want. If it does not automatically contain what you want then you might want to use a [MANIFEST](https://docs.python.org/3/distutils/sourcedist.html) file.
+This creates a dist/ directory containing a compressed archive of the package (e.g. A *.tar.gz file in Linux). This file is your source distribution - you can check it contains what you want. If it does not automatically contain what you want then you might want to use a [MANIFEST](https://docs.python.org/3/distutils/sourcedist.html) file.
 
 Note: A <PROJECT_NAME>.egg-info directory will also be created in your root directory containing meta-data about your distribution. This can safely be deleted if it is not wanted (this is generated even though you have not built an egg format package).
 
 
 ### Creating a wheel (built) distribution
 
-Optionally you may create a wheel distribution. This is a built distrbution for the current platform. Wheels should be used in place of the older egg format. Bear in mind, any extensions will be built for the given platform and as such this must be consistent with any other project dependencies. Wheels will speed up installation if you have compiled code extensions as the build step is not required.
+Optionally you may create a wheel distribution. This is a built distribution for the current platform. Wheels should be used in place of the older egg format. Bear in mind, any extensions will be built for the given platform and as such this must be consistent with any other project dependencies. Wheels will speed up installation if you have compiled code extensions as the build step is not required.
 
 If you do not have the wheel package you can pip install it.
 
@@ -239,12 +239,12 @@ IMPORTANT: First you can test your upload using the PyPI test site. It is highly
 
 This section shows how to upload a source distribution of your package.
 
-Further documentaton at: https://packaging.python.org/guides/using-testpypi/
+Further documentation at: https://packaging.python.org/guides/using-testpypi/
 Note: This link includes the option of using a pypirc file to abbreviate some of the command lines below.
 
-A source distrubtion provides everything needed to build/install the package on any supported platform. Testsuites, documentation and supporting data can also be included.
+A source distribution provides everything needed to build/install the package on any supported platform. Testsuites, documentation and supporting data can also be included.
 
-You can now upload your package to testpypi as follows. Assuming your src distribution under dist is called pyexample-0.1.0.tar.gz:
+You can now upload your package to testpypi as follows. Assuming your source distribution under dist is called pyexample-0.1.0.tar.gz:
 
     twine upload --repository-url https://test.pypi.org/legacy/ dist/pyexample-0.1.0.tar.gz
 
@@ -324,7 +324,7 @@ Note: To run the mpi4py test use at least 2 processors:
 
 *  `mpiexec -np 2 python module_mpi4py_1.py`
 
-#### libensemble:
+#### libEnsemble:
 An Argonne project that controls ensembles of calculations based on numerical optimization.
 
 Location:
@@ -335,7 +335,7 @@ Location:
 Related content includes:
 
  - setup.py includes mapping a different source directory structure to
-   packages and subpackages using the package_dir setup argument.
+   packages and sub-packages using the package_dir setup argument.
    
  - Use  of a MANIFEST file to specify source distribution.
 
