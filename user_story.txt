@@ -1,4 +1,0 @@
-Possible capture of User Story.
-
-As a Software Developer on a small Python project, I want to better understand the tools and processes available to support packaging, testing, documentation and deployment so that I can create a robust and well maintained package.
-
