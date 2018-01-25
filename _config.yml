@@ -1,2 +1,4 @@
 theme: jekyll-theme-cayman
 email: shudson@anl.gov
+plugins:
+  - jekyll-seo-tag
