@@ -1,3 +1,12 @@
+---
+title: "Creating a pip installable package"
+date: 2018-01-25 01:00:00
+tags:
+  - PyPI
+  - pip
+  - package
+  - tutorial
+---
 # Python: Creating a pip installable package
 
 #### Contributed by [Steve Hudson](https://github.com/shuds13)
