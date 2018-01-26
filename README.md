@@ -1,3 +1,7 @@
+---
+layout: post
+title: Python Software Engineering Training Matierals
+---
 ## Python Software Engineering Training Materials
 
 
