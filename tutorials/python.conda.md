@@ -65,6 +65,12 @@ To ensure isolation from external packages on your system set the enviornment va
 
 <!-- Cross compilation issues *** -->
 
+## Cross compilation
+
+Conda version 5 has added features for cross-compilation. A good overview is given in the Conda documentation under [Compiler Tools](https://conda.io/docs/user-guide/tasks/build-packages/compiler-tools.html).
+
+<!-- Add example of this -->
+
 
 ## Examples
 
@@ -85,4 +91,5 @@ or to add Intel's full distribrution (takes a while):
     conda create --name myenv intelpython3_full python=3
 
 Intel conda packages include numpy and SciPy based on MKL. 
+
 
