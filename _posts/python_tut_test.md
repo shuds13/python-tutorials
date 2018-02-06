@@ -1,3 +1,11 @@
+---
+layout: post
+title: "Creating a pip installable package"
+date: 2018-01-25 01:00:00
+categories: python pip package
+permalink: blog/how-to-make-pip-installable-app
+---
+
 # Python: Creating a pip installable package
 
 #### Contributed by [Steve Hudson](https://github.com/shuds13)
@@ -66,10 +74,10 @@ E.g. A simple project may have this structure:
 pyexample
 ├── LICENSE
 ├── pyexample
-│   ├── __init__.py
-│   ├── module_mpi4py_1.py
-│   ├── module_numpy_1.py
-│   └── module_numpy_2.py
+│   ├── __init__.py
+│   ├── module_mpi4py_1.py
+│   ├── module_numpy_1.py
+│   └── module_numpy_2.py
 ├── README.rst
 └── setup.py
 </pre>
