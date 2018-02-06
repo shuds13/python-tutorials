@@ -12,6 +12,16 @@ Ananconda is provided on many major computing platforms includig ECP systems, ge
 
 Miniconda is ideal for personal use on standalone systems and for using with on-line CI tools such as Travis. It's fast due to binary installation and usually quite simple (unless you have dependency issues – see below). libEnsneble has an [example of using Conda with Travis](https://github.com/Libensemble/libensemble/blob/master/.travis.yml)
 
+Download Anaconda [here](https://www.anaconda.com/download)
+Download Miniconda [here](https://conda.io/miniconda.html)
+
+Conda has a good getting started tutorial [here](https://conda.io/docs/user-guide/getting-started.html)
+
+A good discussion on the thinking behind Conda and some common misconceptions can be found here: 
+
+https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/
+
+
 
 ## Issues
 
@@ -50,7 +60,29 @@ Python will also install packages according to sys.path which can be checked by:
     >>> import sys
     >>> sys.path
 
-To ensure isolation from external packages on your system set the enviornment variable `export PYTHONNOUSERSITE=1` before activating the environment (simlar to `--no-site-packages` in virtualenv). This should prevent paths for external python paths being included in the sys.path inside the conda environemnt.
+To ensure isolation from external packages on your system set the enviornment variable `export PYTHONNOUSERSITE=1` before activating the environment (simlar to `--no-site-packages` in virtualenv). This should prevent paths for external python paths being included in the sys.path inside the conda environemnt. Selected directories can also be added using the  PYTHONPATH env variable as usual.
 
-If you add directoreis to your PYTHONPATH env variable, then these should also be added to sys.path.
+
+<!-- Cross compilation issues *** -->
+
+
+## Examples
+
+The Intel Python libraries are popular for you in high performance environments.
+
+Using Intel python libraries:
+
+    conda config --add channels intel
+
+You can now access python packages (Note: channels can also be added to a .condarc file)
+
+To add the set of intel core packaes for latest version of python3 when creating a new environment myenv:
+
+    conda create --name myenv intelpython3_core python=3
+
+or to add Intel's full distribrution (takes a while):
+
+    conda create --name myenv intelpython3_full python=3
+
+Intel conda packages include numpy and SciPy based on MKL. 
 
