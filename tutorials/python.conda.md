@@ -2,13 +2,22 @@
 
 ### What is Conda/Anaconda/Miniconda
 
-Conda is a package manager and virtual environment manager for installing packages from Conda compatible distributions. Anaconda is a conda package distribrution that includes many python packages and extensions. Miniconda includes a much smaller set of core packages along with Conda. Miniconda still has access to the Anaconda repository on-line, and other repositories of conda packages including the community driven conda-forge, and these can easily be installed at the command line. Intel also provides high performance variants of many packages accessible through Conda. This includes numpy/scipy based upon MKL.
+The Conda products form a free cross-platform package management system created by Continuum Analytics, and consists of the following components.
 
-While conda packages are a binary distribrution allowing very fast installation, other forms of installation are supported inside Conda environments, including pip. Any source installation can also be performed inside the Conda virtual environment. Each package installs along with a list of dependent packages by default.
+ - Conda is an open-source package manager and virtual environment manager for installing packages from Conda compatible distributions.
 
-Conda environments are an alternative to other python virtual enviornment managers such as virtualenv, and does not mix well with these. Virtual environments are extremely useful in python for enabling reproducibility and maintaining muliple sets of packages/dependencies.
+ - Anaconda is a Conda package distribution that includes many python packages and extensions. It ships with Conda.
 
-Ananconda is provided on many major computing platforms includig ECP systems, generally requiring loading of an environment module or equivalent.
+ - Miniconda includes a much smaller set of core packages along with Conda. 
+
+
+Miniconda still has access to the Anaconda repository on-line, and other repositories of conda packages including the community driven conda-forge, and these can easily be installed at the command line. Intel also provides high performance variants of many packages accessible through Conda. This includes the numpy/scipy packages built upon MKL.
+
+While conda packages are a binary distribution allowing very fast installation, other forms of installation are supported inside Conda environments, including pip. Any source installation can also be performed inside the Conda virtual environment. Each package installs along with a list of dependent packages by default.
+
+Conda environments are an alternative to other python virtual environment managers such as virtualenv. Virtual environments are extremely useful in python for enabling reproducibility and maintaining multiple sets of packages/dependencies.
+
+Ananconda is provided on many major computing platforms, generally requiring loading of an environment module or equivalent.
 
 Miniconda is ideal for personal use on standalone systems and for using with on-line CI tools such as Travis. It's fast due to binary installation and usually quite simple (unless you have dependency issues – see below). The libEnsemble package has an [example of using Conda with Travis](https://github.com/Libensemble/libensemble/blob/master/.travis.yml)
 
@@ -26,13 +35,13 @@ A good discussion on the thinking behind Conda and some common misconceptions ca
 
 ### Issues and Limitations
 
-A downside of using a binary distribution is that it can be inflexible. The binaries are only built and configured for selected platforms and configurations. Furthermore, packages may come with incompatible dependencies (due to version locked packages or alternative API implementations). This may result in a dependency for one package being upgraded/downgraded when intalling a later package. To some extent this can be managed by use of the `--no-deps` or `--no-update-deps` option on the Conda install command. Conda does not support virtual dependencies and packages may, for example, come with a given MPI implementation as a dependency. 
+A downside of using a binary distribution is that it can be inflexible. The binaries are only built and configured for selected platforms and configurations. Furthermore, packages may come with incompatible dependencies (due to version locked packages or alternative API implementations). This may result in a dependency for one package being upgraded/downgraded when installing a later package. To some extent this can be managed by use of the `--no-deps` or `--no-update-deps` option on the Conda install command. Conda does not support virtual dependencies and packages may, for example, come with a given MPI implementation as a dependency. 
 
-Lets say that you wish to install openMPI via:
+Lets say that you wish to install OpenMPI via:
 
     conda install openmpi
 
-and you then try installing another MPI based package - you may find that package comes with mpich as a dependency.
+and you then try installing another MPI based package - you may find that package comes with MPICH as a dependency.
 
 <!-- *check -->
 
@@ -46,31 +55,31 @@ One answer to this is to try to install packages in one line as follows:
 
     conda install petsc mpi4py openmpi
 
-If this does not work, then sometimes combining source distributions with conda can be used to create customised builds, along with `--no-deps` flags.
+If this does not work, then sometimes combining source distributions with Conda can be used to create customized builds, along with `--no-deps` flags.
 
-When installing on a system with an existing MPI, such as a cluster, then it is highly recommended that mpi4py is installed on top of the system MPI. This can be done using pip install as follows:
+When installing on a system with an existing MPI, such as a cluster, then it is highly recommended that mpi4py is installed on top of the system MPI. This can be done in the Conda environment using pip install as follows:
 
     env MPICC=$(which cc) pip install mpi4py
 
 
-### Combining with external dpendencies
+### Combining with external dependencies
 
-Python will also install packages according to sys.path which can be checked by:
+Python will locate installed packages according to sys.path which can be checked by:
 
 
     $ python
     Python 3.6.3 |Intel Corporation| (default, Oct 16 2017, 15:28:36) ....
     >>> import sys
     >>> sys.path
-
-To ensure isolation from external packages on your system set the enviornment variable `export PYTHONNOUSERSITE=1` before activating the environment (simlar to `--no-site-packages` in virtualenv). This should prevent paths for external python paths being included in the sys.path inside the conda environment. Selected directories can also be added using the  PYTHONPATH env variable as usual.
+ 
+To ensure isolation from external packages on your system set the environment variable `export PYTHONNOUSERSITE=1` before activating the environment (simlar to `--no-site-packages` in virtualenv). This should prevent paths for external python paths being included in the sys.path inside the Conda environment. Selected directories can also be added using the  PYTHONPATH environment variable as usual.
 
 
 <!-- Cross compilation issues *** -->
 
 ### Cross compilation
 
-Conda version 5 has added some features for compiler specification/cross-compilation. A good overview is given in the Conda documentation under [Compiler Tools](https://conda.io/docs/user-guide/tasks/build-packages/compiler-tools.html).
+Conda version 5 has added some features for compiler specification/cross-compilation. A good overview is given in the Conda documentation under [Compiler Tools](https://conda.io/docs/user-guide/tasks/build-packages/compiler-tools.html). Note that as the Conda distributions themselves are binary, the builds are still limited to those available. 
 
 <!-- Add example of this -->
 
@@ -89,7 +98,7 @@ To add the set of intel core packaes for latest version of python3 when creating
 
     conda create --name myenv intelpython3_core python=3
 
-or to add Intel's full distribrution (takes a while):
+or to add Intel's full distribution (takes a while):
 
     conda create --name myenv intelpython3_full python=3
 
