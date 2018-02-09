@@ -37,7 +37,9 @@ and you then try installing another MPI based package - you may find that packag
 <!-- *check -->
 
     conda install petsc
+    
 or
+
     conda install mpi4py
 
 One answer to this is to try to install packages in one line as follows:
@@ -68,7 +70,7 @@ To ensure isolation from external packages on your system set the enviornment va
 
 ### Cross compilation
 
-Conda version 5 has added features for cross-compilation. A good overview is given in the Conda documentation under [Compiler Tools](https://conda.io/docs/user-guide/tasks/build-packages/compiler-tools.html).
+Conda version 5 has added some features for compiler specification/cross-compilation. A good overview is given in the Conda documentation under [Compiler Tools](https://conda.io/docs/user-guide/tasks/build-packages/compiler-tools.html).
 
 <!-- Add example of this -->
 
@@ -98,7 +100,6 @@ Intel conda packages include numpy and SciPy based on MKL.
 
 Any feedback/corrections are welcome: shudson@anl.gov
 
-If this page was useful, please give me a [star](https://github.com/shuds13/python-tutorials)
 
 <!--Template to fill in from how-to example-->
 <!---

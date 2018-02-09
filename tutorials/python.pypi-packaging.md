@@ -341,11 +341,8 @@ Related content includes:
 
 Any feedback/corrections are welcome: shudson@anl.gov
 
-If this page was useful, please give me a [star](https://github.com/shuds13/python-tutorials)
-
 <!--Notes -->
-<!--Want to cover import during development and importing modules instead of appending rel paths to sys.path-->
-<!--I want to make sure date of last article review/update is shown and way to provide feedback/questions-->
+<!--Make sure date of last article review/update is shown and way to provide feedback/questions-->
 
 <!--Template to fill in from how-to example-->
 <!---
