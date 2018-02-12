@@ -72,7 +72,7 @@ Python will locate installed packages according to sys.path which can be checked
     >>> import sys
     >>> sys.path
  
-To ensure isolation from external packages on your system set the environment variable `export PYTHONNOUSERSITE=1` before activating the environment (simlar to `--no-site-packages` in virtualenv). This should prevent paths for external python paths being included in the sys.path inside the Conda environment. Selected directories can also be added using the  PYTHONPATH environment variable as usual.
+To ensure isolation from external packages on your system set the environment variable `export PYTHONNOUSERSITE=1` before activating the environment (similar to `--no-site-packages` in virtualenv). This should prevent paths for external python paths being included in the sys.path inside the Conda environment. Selected directories can also be added using the  PYTHONPATH environment variable as usual.
 
 
 <!-- Cross compilation issues *** -->
@@ -86,15 +86,15 @@ Conda version 5 has added some features for compiler specification/cross-compila
 
 ### Examples
 
-The Intel Python libraries are popular for you in high performance environments.
+The Intel Python libraries are popular for use in high performance environments.
 
 Using Intel python libraries:
 
     conda config --add channels intel
 
-You can now access python packages (Note: channels can also be added to a .condarc file)
+You can now access Python packages (Note: channels can also be added to a .condarc file)
 
-To add the set of intel core packaes for latest version of python3 when creating a new environment myenv:
+To add the set of Intel core packages for latest version of python3 when creating a new environment myenv:
 
     conda create --name myenv intelpython3_core python=3
 
@@ -102,7 +102,7 @@ or to add Intel's full distribution (takes a while):
 
     conda create --name myenv intelpython3_full python=3
 
-Intel conda packages include numpy and SciPy based on MKL. 
+Intel Conda packages include NumPy and SciPy based on MKL. 
 
 
 ### Feedback
