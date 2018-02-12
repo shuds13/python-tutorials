@@ -11,7 +11,7 @@ The Conda products form a free cross-platform package management system created 
  - Miniconda includes a much smaller set of core packages along with Conda. 
 
 
-Miniconda still has access to the Anaconda repository on-line, and other repositories of conda packages including the community driven conda-forge, and these can easily be installed at the command line. Intel also provides high performance variants of many packages accessible through Conda. This includes the numpy/scipy packages built upon MKL.
+Miniconda still has access to the Anaconda repository on-line, and other repositories of Conda packages including the community driven conda-forge, and these can easily be installed at the command line. Intel also provides high performance variants of many packages accessible through Conda. This includes the NumPy and SciPy packages built upon MKL.
 
 While conda packages are a binary distribution allowing very fast installation, other forms of installation are supported inside Conda environments, including pip. Any source installation can also be performed inside the Conda virtual environment. Each package installs along with a list of dependent packages by default.
 
@@ -23,7 +23,7 @@ Miniconda is ideal for personal use on standalone systems and for using with on-
 
 Further resources:
 
-Download [Anaconda](://www.anaconda.com/download)
+Download [Anaconda](www.anaconda.com/download)
 
 Download [Miniconda](https://conda.io/miniconda.html)
 
