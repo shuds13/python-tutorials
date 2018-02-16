@@ -1,4 +1,6 @@
-## Obtaining NumPy build configuration.
+# Obtaining NumPy build configuration.
+
+#### Contributed by [Steve Hudson](https://github.com/shuds13)
 
 NumPy is based on compiled C extensions and in turn is built upon BLAS/LAPACK libraries. The following gives some information on how to interrogate the build configuration and dependent libraries upon which NumPy is built.
 
@@ -50,3 +52,14 @@ If NumPy has been installed without modification it will likely inherit the conf
 References:
 Python for High Performance Computing (Exascale Computing Project 2nd Annual Meeting) [Slides](https://github.com/wscullin/ecp_python_tutorial/blob/master/slides/ECP_Python_Tutorial_2018.pdf)
 William Scullin (ALCF), Matt Belhorn (OLCF), Rollin Thomas (NERSC)
+
+<!--Template to fill in from how-to example-->
+<!---
+Publish: yes
+Categories: development
+Topics: development, deployment
+Tags: bssw-article
+Level: 2???
+Prerequisites: default
+Aggregate: none???
+--->

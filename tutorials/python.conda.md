@@ -1,5 +1,7 @@
 # Conda and Anaconda
 
+#### Contributed by [Steve Hudson](https://github.com/shuds13)
+
 ### What is Conda/Anaconda/Miniconda
 
 The Conda products form a free cross-platform package management system created by Continuum Analytics, and consists of the following components.
