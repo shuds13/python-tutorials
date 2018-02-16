@@ -13,9 +13,9 @@ The Conda products form a free cross-platform package management system created 
 
 Miniconda still has access to the Anaconda repository on-line, and other repositories of Conda packages including the community driven conda-forge, and these can easily be installed at the command line. Intel also provides high performance variants of many packages accessible through Conda. This includes the NumPy and SciPy packages built upon MKL.
 
-While conda packages are a binary distribution allowing very fast installation, other forms of installation are supported inside Conda environments, including pip. Any source installation can also be performed inside the Conda virtual environment. Each package installs along with a list of dependent packages by default.
+While Conda packages are a binary distribution allowing very fast installation, other forms of installation are supported inside Conda environments, including pip. Any source installation can also be performed inside the Conda virtual environment. Each package installs along with a list of dependent packages by default.
 
-Conda environments are an alternative to other python virtual environment managers such as virtualenv. Virtual environments are extremely useful in python for enabling reproducibility and maintaining multiple sets of packages/dependencies.
+Conda environments are an alternative to other python virtual environment managers such as virtualenv. Virtual environments are extremely useful in python for enabling reproducibility and maintaining multiple sets of packages/dependencies. Unlike other virtual environments, Conda installs Python itself inside the environment, by default.
 
 Ananconda is provided on many major computing platforms, generally requiring loading of an environment module or equivalent.
 
@@ -86,7 +86,7 @@ Conda version 5 has added some features for compiler specification/cross-compila
 
 ### Examples
 
-The Intel Python libraries are popular for use in high performance environments.
+The Intel Python libraries are popular for use in high performance environments. 
 
 Using Intel python libraries:
 
@@ -103,6 +103,11 @@ or to add Intel's full distribution (takes a while):
     conda create --name myenv intelpython3_full python=3
 
 Intel Conda packages include NumPy and SciPy based on MKL. 
+
+Note that the Intel compiler does not come with the Intel Conda packages. These packages will generally work with gcc and this may be worthwhile for picking up the MKL library. 
+
+
+If an Intel compiler is not available on the system, the default gcc compiler will be used.
 
 
 ### Feedback
