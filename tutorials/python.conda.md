@@ -43,8 +43,6 @@ Lets say that you wish to install OpenMPI via:
 
 and you then try installing another MPI based package - you may find that package comes with MPICH as a dependency.
 
-<!-- *check -->
-
     conda install petsc
     
 or
@@ -61,7 +59,8 @@ When installing on a system with an existing MPI, such as a cluster, then it is 
 
     env MPICC=$(which cc) pip install mpi4py
 
-
+If working in a cross-compilation environment, ensure the correct compiler and MPI libraries are loaded.
+    
 ### Combining with external dependencies
 
 Python will locate installed packages according to sys.path which can be checked by:
@@ -104,10 +103,7 @@ or to add Intel's full distribution (takes a while):
 
 Intel Conda packages include NumPy and SciPy based on MKL. 
 
-Note that the Intel compiler does not come with the Intel Conda packages. These packages will generally work with gcc and this may be worthwhile for picking up the MKL library. 
-
-
-If an Intel compiler is not available on the system, the default gcc compiler will be used.
+Note that the Intel compiler is not included in the Intel Conda packages. These packages will generally work with gcc and this may be worthwhile for picking up, for example, the MKL library. If an Intel compiler is not available on the system, the default gcc compiler will be used.
 
 
 ### Feedback
