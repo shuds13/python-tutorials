@@ -49,9 +49,13 @@ If NumPy has been installed without modification it will likely inherit the conf
     from distutils import sysconfig
     sysconfig.get_config_vars()
 
-References:
+## References
+
 Python for High Performance Computing (Exascale Computing Project 2nd Annual Meeting) [Slides](https://github.com/wscullin/ecp_python_tutorial/blob/master/slides/ECP_Python_Tutorial_2018.pdf)
 William Scullin (ALCF), Matt Belhorn (OLCF), Rollin Thomas (NERSC)
+
+[find-out-if-which-blas-library-is-used-by-numpy](https://stackoverflow.com/questions/37184618/find-out-if-which-blas-library-is-used-by-numpy)
+
 
 <!--Template to fill in from how-to example-->
 <!---
