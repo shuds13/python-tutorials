@@ -8,10 +8,14 @@ Tutorials:
 
 Tips on Python for Scientific Computing:
  - [Interrogating NumPy Configuration/Compiler Options](tutorials/interrogating_numpy.md)
- 
+ - [Links for moving from Matlab to NumPy](tutorials/matlab-numpy-conversion.md)
+
+Python resources for computational scientists:
+ - [XSD Python Training Home](https://confluence.aps.anl.gov/display/XSDPT/XSD+Python+Training+Home)
+
+
 Find more software engineering materials for computational scientists at the [Better Scientific Software](https://bssw.io/) website.
 
- 
 ### Feedback
 
 Any feedback/corrections are welcome: shudson@anl.gov
