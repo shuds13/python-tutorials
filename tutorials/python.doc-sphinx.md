@@ -11,6 +11,7 @@
 6. [Upload to ReadtheDocs](#upload-to-readthedocs)
 7. [Breathe: Combining with Doxygen](#breathe-combining-with-doxygen)
 8. [Links](#links)
+9. [Feedback](#feedback)
 
 
 ### Introduction
@@ -21,9 +22,7 @@ Sphinx is a documentation generator based on interpretation of rst (Restructured
 
 ### Setup
 
-The following gives a very basic setup to get started a quick as possible.
-
-More info at official [webpage](http://www.sphinx-doc.org)
+The following gives a very basic setup to get started as quick as possible.
 
 First Install and set up Sphinx: 
     
@@ -114,6 +113,11 @@ Note: Before you rebuild always make clean.
 
     make clean; make html
     firefox _build/html/index.html    
+
+Further Instructions at [First Steps with Sphinx](http://www.sphinx-doc.org/en/stable/tutorial.html)
+
+Alternative [installation instructions](http://www.sphinx-doc.org/en/stable/install.html)
+
 
 ### Autodoc
 
@@ -264,6 +268,22 @@ Then add doxygen_files to your toctree in index.
 
 ### Links
 
-Further Instructions at [First Steps with Sphinx](http://www.sphinx-doc.org/en/stable/tutorial.html)
-Alternative [installations](http://www.sphinx-doc.org/en/stable/install.html)
+More info at official [webpage](http://www.sphinx-doc.org)
+
+
+### Feedback
+
+Any feedback/corrections are welcome: shudson@anl.gov
+
+
+<!--Template to fill in from how-to example-->
+<!---
+Publish: yes
+Categories: development
+Topics: development, deployment
+Tags: bssw-article
+Level: 2???
+Prerequisites: default
+Aggregate: none???
+--->
 
