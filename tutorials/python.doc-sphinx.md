@@ -16,9 +16,9 @@
 
 ### Introduction
 
-This articles introduces documentation with Sphinx for Python projects and is intended as a quick getting started document.
+This article introduces documentation with Sphinx for Python projects and is intended as a quick getting started document.
 
-Sphinx is a documentation generator based on interpretation of rst (RestructuredText). It is used extensively for Python projects.
+Sphinx is a documentation generator based on interpretation of reStructuredText (abbr. rst or reST). It is used extensively for Python projects.
 
 ### Setup
 
@@ -28,18 +28,16 @@ First Install and set up Sphinx:
     
      pip install Sphinx
      
-Now in your python project create a docs/ directory at the top level of your package. Inside the docs directory run:
+Now in your python project create a docs/ directory at the top level of your package. Inside the docs/ directory run:
 
      sphinx-quickstart
 
-For basic setup, most questions can takes defaults (shown in square brackets) - just press enter. 
+For basic setup, most questions can take defaults (shown in square brackets) - just press enter. 
 
 Below is an example set of answers for project `myproj`. 
 
 Note: The first question takes default as we're running in docs/ directory:
 Note: Make sure to say yes to the autodoc question if you want to auto-generate an API from docstrings. Highly recommended!
-
-<!-- highlight where I've given an answer - and maybe suggest some you might want - eg math functions -->
 
 > Root path for the documentation [.]:  
 > Separate source and build directories (y/n) [n]:  
@@ -80,9 +78,9 @@ Makefile
 
 index.rst is the base file containing your toctree (table of contents tree).
 
-conf.py is the configuration of your project
+conf.py is the configuration file for your project.
 
-You now have template for your documentation. To build:
+You now have a template for your documentation. To build:
 
     make html
     
@@ -91,7 +89,7 @@ And then open in a browser. E.g:
     firefox _build/html/index.html
 
     
-Now create a file called readme.rst in the docs directory. This will simply contain a pointer to your readme file eg:
+Create a file called readme.rst in the docs directory. This will simply contain a pointer to your project readme file eg:
 
     .. include:: ../README.rst
     
@@ -194,7 +192,7 @@ To nest sets of modules under the index title see the [libEnsemble example](http
 
 ### Themes
 
-At time of writing the popular theme is the Readthedocs them. To change the theme, find the `html_theme` line in conf.py and change. E.g.
+At time of writing the most popular theme is the Readthedocs theme. To change the theme, find the `html_theme` line in conf.py and change. E.g.
 
     html_theme = 'sphinx_rtd_theme'
 
