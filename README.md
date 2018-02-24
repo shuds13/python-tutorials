@@ -5,6 +5,7 @@ Tutorials:
 
  - [Creating a PYPI package](tutorials/python.pypi-packaging.md)
  - [Using Conda / Anaconda](tutorials/python.conda.md)
+ - [Documenting with Sphinx](tutorials/python.doc-sphinx.md)
 
 Tips on Python for Scientific Computing:
  - [Interrogating NumPy Configuration/Compiler Options](tutorials/interrogating_numpy.md)
