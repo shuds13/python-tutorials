@@ -41,8 +41,8 @@ Note: Make sure to say yes to the autodoc question if you want to auto-generate 
 
 <!-- highlight where I've given an answer - and maybe suggest some you might want - eg math functions -->
 
-> Root path for the documentation [.]: 
-> Separate source and build directories (y/n) [n]: 
+> Root path for the documentation [.]:  
+> Separate source and build directories (y/n) [n]:  
 > Name prefix for templates and static dir [_]: 
 > Project name: `myproj`
 > Author name(s): `Steve Hudson`
