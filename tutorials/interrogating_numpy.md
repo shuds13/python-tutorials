@@ -56,7 +56,13 @@ William Scullin (ALCF), Matt Belhorn (OLCF), Rollin Thomas (NERSC)
 
 stackoverflow: [find-out-if-which-blas-library-is-used-by-numpy](https://stackoverflow.com/questions/37184618/find-out-if-which-blas-library-is-used-by-numpy)
 
+## Feedback
+
+Any feedback/corrections are welcome: shudson@anl.gov
+
 If this page was useful, please leave a [star](https://github.com/shuds13/python-tutorials) on the github page.
+
+<br>
 
 Back to [main page](https://shuds13.github.io/python-tutorials)
 
