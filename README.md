@@ -13,7 +13,7 @@ Tips on Python for Scientific Computing:
 
 Python resources for computational scientists:
  - [XSD Python Training Home](https://confluence.aps.anl.gov/display/XSDPT/XSD+Python+Training+Home)
-
+ - [On-demand learning for Python - using a Transmedia Learning Framework](https://bssw.io/resources/on-demand-learning-for-better-scientific-software)
 
 Find more software engineering materials for computational scientists at the [Better Scientific Software](https://bssw.io/) website.
 

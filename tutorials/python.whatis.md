@@ -133,7 +133,7 @@ Virtualenv is a popular alternative for those not using Conda.
 
 * [More detailed introduction](https://github.com/wscullin/ecp_Python_tutorial/blob/master/slides/ECP_Python_Tutorial_2018.pdf)
     
-* [On-demand learning for Python - using Transmedia Learning Framework](https://bssw.io/resources/on-demand-learning-for-better-scientific-software)
+* [On-demand learning for Python - using a Transmedia Learning Framework](https://bssw.io/resources/on-demand-learning-for-better-scientific-software)
 
 
 
