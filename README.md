@@ -2,7 +2,7 @@
 
 
 Tutorials:
-
+ - [Python for HPC](tutorials/python.whatis.md)
  - [Creating a PYPI package](tutorials/python.pypi-packaging.md)
  - [Using Conda / Anaconda](tutorials/python.conda.md)
  - [Documenting with Sphinx](tutorials/python.doc-sphinx.md)
