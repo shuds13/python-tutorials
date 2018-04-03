@@ -273,6 +273,9 @@ More info at official [webpage](http://www.sphinx-doc.org)
 
 Any feedback/corrections are welcome: shudson@anl.gov
 
+<br>
+
+Back to [main page](https://shuds13.github.io/python-tutorials)
 
 <!--Template to fill in from how-to example-->
 <!---

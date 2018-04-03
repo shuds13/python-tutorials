@@ -111,7 +111,7 @@ Anaconda is a Conda package distribution that includes many Python packages and 
 
 Conda has a [getting started tutorial](https://conda.io/docs/user-guide/getting-started.html)
 
-This series also has a [Conda for HPC](https://shuds13.github.io/Python-tutorials/tutorials/Python.conda.html) introduction.
+This series also has a [Conda for HPC](https://shuds13.github.io/python-tutorials/tutorials/Python.conda.html) introduction.
 
 
 ### Virtual Environments
@@ -141,6 +141,15 @@ Virtualenv is a popular alternative for those not using Conda.
 
 Python for High Performance Computing (Exascale Computing Project 2nd Annual Meeting) [Slides](https://github.com/wscullin/ecp_Python_tutorial/blob/master/slides/ECP_Python_Tutorial_2018.pdf)
 William Scullin (ALCF), Matt Belhorn (OLCF), Rollin Thomas (NERSC)
+
+## Feedback
+
+Any feedback/corrections are welcome: shudson@anl.gov
+
+<br>
+
+Back to [main page](https://shuds13.github.io/python-tutorials)
+
 
 
 <!--Template to fill in from how-to example-->
