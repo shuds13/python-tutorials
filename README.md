@@ -11,9 +11,14 @@ Tips on Python for Scientific Computing:
  - [Interrogating NumPy Configuration/Compiler Options](tutorials/interrogating_numpy.md)
  - [Links for moving from Matlab to NumPy](tutorials/matlab-numpy-conversion.md)
 
+Presentations:
+ - [ECP Python Tutorial 2018]((https://github.com/wscullin/ecp_python_tutorial/blob/master/slides/ECP_Python_Tutorial_2018.pdf))
+ - [Python in HPC Webinar (See Webinar No. 8)](https://ideas-productivity.org/events/hpc-best-practices-webinars/) 
+ 
 Python resources for computational scientists:
  - [XSD Python Training Home](https://confluence.aps.anl.gov/display/XSDPT/XSD+Python+Training+Home)
  - [On-demand learning for Python - using a Transmedia Learning Framework](https://bssw.io/resources/on-demand-learning-for-better-scientific-software)
+
 
 Find more software engineering materials for computational scientists at the [Better Scientific Software](https://bssw.io/) website.
 
