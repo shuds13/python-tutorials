@@ -111,7 +111,7 @@ Anaconda is a Conda package distribution that includes many Python packages and 
 
 Conda has a [getting started tutorial](https://conda.io/docs/user-guide/getting-started.html)
 
-This series also has a [Conda for HPC](https://shuds13.github.io/python-tutorials/tutorials/Python.conda.html) introduction.
+This series also has a [Conda for HPC](https://shuds13.github.io/python-tutorials/tutorials/python.conda.html) introduction.
 
 
 ### Virtual Environments
@@ -126,15 +126,12 @@ Virtualenv is a popular alternative for those not using Conda.
 * [Intel Python](https://software.intel.com/en-us/distribution-for-Python) - managed and used via Conda
 * [Enthought Canopy](https://www.enthought.com/product/enthought-Python-distribution)
 
-[Example](https://shuds13.github.io/Python-tutorials/tutorials/Python.conda.html#examples) of Intel Python usage in Conda.
+[Example](https://shuds13.github.io/Python-tutorials/tutorials/python.conda.html#examples) of Intel Python usage in Conda.
 
     
 ### Links
 
 * [More detailed introduction](https://github.com/wscullin/ecp_Python_tutorial/blob/master/slides/ECP_Python_Tutorial_2018.pdf)
-    
-* [On-demand learning for Python - using a Transmedia Learning Framework](https://bssw.io/resources/on-demand-learning-for-better-scientific-software)
-
 
 
 ### References
