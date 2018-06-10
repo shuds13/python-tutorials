@@ -12,7 +12,7 @@ Tips on Python for Scientific Computing:
  - [Links for moving from Matlab to NumPy](tutorials/matlab-numpy-conversion.md)
 
 Presentations:
- - [ECP Python Tutorial 2018]((https://github.com/wscullin/ecp_python_tutorial/blob/master/slides/ECP_Python_Tutorial_2018.pdf))
+ - [ECP Python Tutorial 2018](https://github.com/wscullin/ecp_python_tutorial/blob/master/slides/ECP_Python_Tutorial_2018.pdf)
  - [Python in HPC Webinar (See Webinar No. 8)](https://ideas-productivity.org/events/hpc-best-practices-webinars/) 
  
 Python resources for computational scientists:
