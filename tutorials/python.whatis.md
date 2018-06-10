@@ -126,7 +126,7 @@ Virtualenv is a popular alternative for those not using Conda.
 * [Intel Python](https://software.intel.com/en-us/distribution-for-Python) - managed and used via Conda
 * [Enthought Canopy](https://www.enthought.com/product/enthought-Python-distribution)
 
-[Example](https://shuds13.github.io/Python-tutorials/tutorials/python.conda.html#examples) of Intel Python usage in Conda.
+[Example](https://shuds13.github.io/python-tutorials/tutorials/python.conda.html#examples) of Intel Python usage in Conda.
 
     
 ### Links
