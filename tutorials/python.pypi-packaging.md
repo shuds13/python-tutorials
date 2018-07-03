@@ -3,7 +3,7 @@
 #### Contributed by [Steve Hudson](https://github.com/shuds13)
 
 1. [Introduction](#introduction)
-2. [What is pip?](#what-is-pip?)
+2. [What is pip?](#what-is-pip)
 3. [Creating a Python package](#creating-a-python-package)
 4. [Creating a source distribution](#creating-a-source-distribution)
 5. [Creating a wheel (built) distribution](#creating-a-wheel-distribution)
@@ -326,7 +326,7 @@ A small sample project using numpy and mpi4py (used as example above).
 
 Location:
 
-* Github: https://github.com/shuds13/pyexample
+* Github: (https://github.com/shuds13/pyexample)
  
 Note: To run the mpi4py test use at least 2 processors: 
 
