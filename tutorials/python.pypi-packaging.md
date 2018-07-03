@@ -6,7 +6,7 @@
 2. [What is pip?](#what-is-pip)
 3. [Creating a Python package](#creating-a-python-package)
 4. [Creating a source distribution](#creating-a-source-distribution)
-5. [Creating a wheel (built) distribution](#creating-a-wheel-distribution)
+5. [Creating a wheel distribution](#creating-a-wheel-distribution)
 6. [Testing and Publishing package on PyPI](#testing-and-publishing-package-on-pypi)
 7. [Uploading to testpypi](#uploading-to-testpypi)
 8. [Uploading to PyPI](#uploading-to-pypi)
@@ -326,7 +326,7 @@ A small sample project using numpy and mpi4py (used as example above).
 
 Location:
 
-* Github: (https://github.com/shuds13/pyexample)
+* [Github](https://github.com/shuds13/pyexample)
  
 Note: To run the mpi4py test use at least 2 processors: 
 
@@ -337,8 +337,8 @@ An Argonne project that controls ensembles of calculations based on numerical op
 
 Location:
 
-* Github: https://github.com/Libensemble/libensemble
-* PyPI:   https://pypi.python.org/pypi/libensemble
+* [Github](https://github.com/Libensemble/libensemble)
+* [PyPI](https://pypi.python.org/pypi/libensemble)
 
 Related content includes:
 
