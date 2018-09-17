@@ -222,10 +222,7 @@ If it is not python2/3 compatible or contains compiled extensions just use:
 
 The installable wheel will be created under the dist/ directory. A build directory will also be created with the built code.
     
-Further details for building wheels can be found here:
-https://packaging.python.org/tutorials/distributing-packages/#wheels
-
-<!-- I need to check this stuff as I don't normally build wheels py2/3 specific... etc. -->
+Further details for building wheels can be found here: <https://packaging.python.org/tutorials/distributing-packages/#wheels>
 
 
 ### Testing and Publishing package on PyPI
@@ -255,11 +252,6 @@ This section shows how to upload a source distribution of your package.
 
 Further documentation at: <https://packaging.python.org/guides/using-testpypi>
 Note: This link includes the option of using a pypirc file to abbreviate some of the command lines below.
-
-Further documentation at: <https://docs.python.org/distutils/sourcedist>
-Note: This link includes the option of using a pypirc file to abbreviate some of the command lines below.
-
-
 
 A source distribution provides everything needed to build/install the package on any supported platform. Testsuites, documentation and supporting data can also be included.
 
@@ -327,7 +319,7 @@ Or just the package without dependencies:
 
     pip download --no-deps pyexample
 
-Downloading the source distribution is a good way to check that it includes what you want by default. If not, then consider adding a MANIFEST file, which instructs setuptools what to include in the source distribution.
+Downloading the source distribution is a good way to check that it includes what you want by default. If not, then consider adding a [MANIFEST](https://docs.python.org/distutils/sourcedist) file, which instructs setuptools what to include in the source distribution.
 
 
 ### Example projects
