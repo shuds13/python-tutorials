@@ -199,9 +199,9 @@ Create a source distribution. From your root directory:
 
     python setup.py sdist
 
-This creates a dist/ directory containing a compressed archive of the package (e.g. <PACKAGE_NAME>-<VERSION>.tar.gz in Linux). This file is your source distribution. If it does not automatically contain what you want, then you might consider using a MANIFEST file (see <https://docs.python.org/distutils/sourcedist>).
+This creates a dist/ directory containing a compressed archive of the package (e.g. `<PACKAGE_NAME>-<VERSION>`.tar.gz in Linux). This file is your source distribution. If it does not automatically contain what you want, then you might consider using a MANIFEST file (see <https://docs.python.org/distutils/sourcedist>).
 
-Note: A <PACKAGE_NAME>.egg-info directory will also be created in your root directory containing meta-data about your distribution. This can safely be deleted if it is not wanted (despite the extension, this is generated even though you have not built an egg format package).
+Note: A `<PACKAGE_NAME>`.egg-info directory will also be created in your root directory containing meta-data about your distribution. This can safely be deleted if it is not wanted (despite the extension, this is generated even though you have not built an egg format package).
 
 
 ### Creating a wheel distribution
@@ -255,6 +255,11 @@ This section shows how to upload a source distribution of your package.
 
 Further documentation at: <https://packaging.python.org/guides/using-testpypi>
 Note: This link includes the option of using a pypirc file to abbreviate some of the command lines below.
+
+Further documentation at: <https://docs.python.org/distutils/sourcedist>
+Note: This link includes the option of using a pypirc file to abbreviate some of the command lines below.
+
+
 
 A source distribution provides everything needed to build/install the package on any supported platform. Testsuites, documentation and supporting data can also be included.
 
