@@ -107,11 +107,11 @@ branch on the fork to the develop branch on the upstream.
 Quick summary for bringing develop branch on forked repo up to speed with upstream
 (YOU WILL LOSE ANY CHANGES):
 
-    git remote add upstream https://github.com/spack/spack.git
-    git fetch upstream
-    git checkout develop
-    git reset --hard upstream/develop
-    git push origin master --force
+    git remote add upstream https://github.com/spack/spack.git  
+    git fetch upstream  
+    git checkout develop  
+    git reset --hard upstream/develop  
+    git push origin master --force  
 
 Reference: <https://stackoverflow.com/questions/9646167/clean-up-a-fork-and-restart-it-from-the-upstream/39628366>
     
