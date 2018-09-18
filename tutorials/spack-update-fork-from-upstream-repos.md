@@ -10,7 +10,7 @@ This article assumes you have already made a github fork from spack and cloned i
 
 [How to create forks](https://help.github.com/articles/fork-a-repo)
 
-You now have a configuration like [this](https://www.google.com/search?q=github+fork+repo&safe=off&client=ubuntu&hs=or1&channel=fs&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjn4u-l38LdAhUp5oMKHeEaBHQQ_AUIDigB&biw=1279&bih=753#imgrc=5wGOHz29WSUMhM]
+You now have a configuration like [this](<https://www.google.com/search?q=github+fork+repo&safe=off&client=ubuntu&hs=or1&channel=fs&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjn4u-l38LdAhUp5oMKHeEaBHQQ_AUIDigB&biw=1279&bih=753#imgrc=5wGOHz29WSUMhM>]
 
 Upstream is the proper Spack repo on github. Origin is your fork on github and local machine
 is your clone (from your fork).
