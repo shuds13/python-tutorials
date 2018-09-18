@@ -12,9 +12,9 @@ This article assumes you have already made a github fork from spack and cloned i
 
 You now have a configuration like this:
 
-![github-fork-diagram.png](github-fork-diagram.png)
+![Image of github fork](../github-fork-diagram.png)
 
-Upstream is the proper Spack repo on github. Origin is your fork on github and local machine
+Upstream is the proper Spack repo on github. Origin is your fork on github and local machine 
 is your clone (from your fork).
 
 Note: Details relating to Spack may change at any time, including whether develop is
