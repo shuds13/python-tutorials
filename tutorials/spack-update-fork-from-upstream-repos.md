@@ -14,6 +14,8 @@ You now have a configuration like this:
 
 ![Image of github fork](../github-fork-diagram.png)
 
+*Image Reference: https://stackoverflow.com/questions/6286571/are-git-forks-actually-git-clones*
+
 Upstream is the proper Spack repo on github. Origin is your fork on github and local machine 
 is your clone (from your fork).
 
