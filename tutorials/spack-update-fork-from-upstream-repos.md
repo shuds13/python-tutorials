@@ -113,6 +113,8 @@ Quick summary for bringing develop branch on forked repo up to speed with upstre
     git reset --hard upstream/develop
     git push origin master --force
 
+Reference: <https://stackoverflow.com/questions/9646167/clean-up-a-fork-and-restart-it-from-the-upstream/39628366>
+    
 <!---
 Publish: Yes
 Categories: development
