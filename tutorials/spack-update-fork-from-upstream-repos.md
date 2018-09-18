@@ -31,6 +31,7 @@ To set upstream repo:
     git remote -v # check added
 
 (Optional) Prevent accidental pushes to upstream:
+
     git remote set-url --push upstream no_push
     git remote -v # Check for line: `upstream	no_push (push)`
     
@@ -41,26 +42,32 @@ You will now update your local machine from the upstream repo (if in doubt - mak
 in your filestystem before doing the following).
 
 Check upstream remote is present:
+
     git remote -v
 
 Ensure you are on the develop branch:
+
     git checkout develop
 
 Fetch from upstream repo:
+
     git fetch upstream
 
 Now to update your local machine you may wish to rebase or overwrite your local files.
 Select from the following:
 
-If you have local changes to go "on top" of latest code.
+If you have local changes to go "on top" of latest code:
+
     git rebase upstream/develop
 
 Or to make your local machine identical to upstream repo (**WARNING** Any local changes WILL BE LOST):
+
     git reset --hard upstream/develop
 
     
 (Optional) You may want to update your forked (origin) repo on github at this point.
 This may requires a forced push:
+
     git push origin develop --force
     
 
@@ -74,6 +81,7 @@ See the Spack [packaging](https://spack.readthedocs.io/en/latest/packaging_guide
 
 
 Quick example to update MYPACKAGE:
+
     git branch update_MYPACKAGE
     git checkout update_MYPACKAGE
     spack edit MYPACKAGE
@@ -83,9 +91,11 @@ Update MYPACKAGE file by pasting in the new checksum line.
 If `spack checksum` does not work, get the tarball for the new release and use `sha256sum MYPACKAGE.tar.gz`
 
 Check package:
+
      spack flake8
 
-If OK add, commit and push to origin (forked repo)
+If OK add, commit and push to origin (forked repo):
+
      git commit -am "Update MYPACKAGE"
      git push origin update_MYPACKAGE --force
      
@@ -99,6 +109,7 @@ branch on the fork to the develop branch on the upstream.
 
 Quick summary for bringing develop branch on forked repo up to speed with upstream
 (YOU WILL LOSE ANY CHANGES):
+
     git remote add upstream https://github.com/spack/spack.git
     git fetch upstream
     git checkout develop
