@@ -16,11 +16,8 @@ You now have a configuration like this:
 
 *Image Reference: https://stackoverflow.com/questions/6286571/are-git-forks-actually-git-clones*
 
-Upstream is the proper Spack repo on github. Origin is your fork on github and local machine 
-is your clone (from your fork).
-
-Note: Details relating to Spack may change at any time, including whether develop is
-used as the default branch.
+Upstream, in this case, is the official Spack repository on github. Origin is your fork on github and Local Machine 
+is your local clone (from your fork).
 
 
 ### DO ONCE in your local checkout:
@@ -115,9 +112,6 @@ Quick summary for bringing develop branch on forked repo up to speed with upstre
     git checkout develop
     git reset --hard upstream/develop
     git push origin master --force
-
-
-Reference: <https://stackoverflow.com/questions/9646167/clean-up-a-fork-and-restart-it-from-the-upstream/39628366>
 
 <!---
 Publish: Yes
