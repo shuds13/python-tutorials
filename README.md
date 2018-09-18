@@ -18,6 +18,9 @@ Presentations:
 Python resources for computational scientists:
  - [XSD Python Training Home](https://confluence.aps.anl.gov/display/XSDPT/XSD+Python+Training+Home)
  - [On-demand learning for Python - using a Transmedia Learning Framework](https://bssw.io/resources/transmedia-learning-frameworks-tlf)
+ 
+Testing:
+ - [Spack workflow article](tutorials/spack-update-fork-from-upstream-repos.md)
 
 
 Find more software engineering materials for computational scientists at the [Better Scientific Software](https://bssw.io/) website.
