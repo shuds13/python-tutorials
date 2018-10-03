@@ -35,7 +35,7 @@ the ECP and broader scientific community. It is part of the [IDEAS-ECP](https://
  - [NumPy](http://www.numpy.org/) NumPy is the fundamental package for scientific computing with Python.
  - [SciPy](https://www.scipy.org/) A Python-based ecosystem of open-source software for mathematics, science, and engineering. Now incorporates: Numpy, the SciPy library, Matplotlib, IPython, SymPy and Pandas.
  
- #### Parallel and Distributed Programming Options:
+#### Parallel and Distributed Programming Options:
  
  Note: Python provides an in-built [threading](https://docs.python.org/3/library/threading.html) module. However, this is not really suitable for parallel computation due to the [GIL](https://wiki.python.org/moin/GlobalInterpreterLock) (Global Interpreter Lock)
  
