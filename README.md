@@ -31,24 +31,24 @@ the ECP and broader scientific community. It is part of the [IDEAS-ECP](https://
  
 ### Scientific Libraries
 
-Scientific computing packages:
+#### Scientific computing packages in Python (running C extensions):
  - [NumPy](http://www.numpy.org/) NumPy is the fundamental package for scientific computing with Python.
  - [SciPy](https://www.scipy.org/) A Python-based ecosystem of open-source software for mathematics, science, and engineering. Now incorporates: Numpy, the SciPy library, Matplotlib, IPython, SymPy and Pandas.
  
- Parallel and Distributed Programming Options:
+ #### Parallel and Distributed Programming Options:
  
- Note: Python provides an in-built threading module. However, this is not really suitable for parallel computation due to the [GIL](https://wiki.python.org/moin/GlobalInterpreterLock) (Global Interpreter Lock)
+ Note: Python provides an in-built [threading](https://docs.python.org/3/library/threading.html) module. However, this is not really suitable for parallel computation due to the [GIL](https://wiki.python.org/moin/GlobalInterpreterLock) (Global Interpreter Lock)
  
  - [mpi4py](https://mpi4py.readthedocs.io/en/stable/) Python wrapper for MPI
  - [Multiprocessing module](https://docs.python.org/3/library/multiprocessing.html) Basic multiple process parallelism through forked interpreters (with threading like interface). Be aware of issues mixing with OpenMP, MPI, or shared memory tools.
 
 
- Python bindings to scientific libraries in HPC:
+#### Python bindings to scientific libraries in HPC:
  - [petsc4py](https://bitbucket.org/petsc/petsc4py) Python bindings for PETSc
  - [slepc4py](https://bitbucket.org/slepc/slepc4py) Python bindings for SLEPc, the Scalable Library for Eigenvalue Problem Computations
  - [PyTrilinos](https://trilinos.org/packages/pytrilinos/) A set of python wrappers for selected Trilinos packages
 
- I/O:
+#### I/O:
  - [h5py](https://www.h5py.org/) The h5py package is a Pythonic interface to the HDF5 binary data format.
  
 
