@@ -54,13 +54,11 @@ the ECP and broader scientific community. It is part of the [IDEAS-ECP](https://
  
 ### Python on Accelerators
 
- - [Numba](https://numba.pydata.org/) Numba is an open source JIT compiler that translates a subset of Python and NumPy code into fast machine code (Mark hotspot functions with decorators and they are compiled.). Numba supports Intel and AMD x86, POWER8/9, and ARM CPUs, NVIDIA and AMD GPUs. Relies on decorators to identify code sections to accelerate. [Numba Presentation Scipy 2017 (Video)](https://www.youtube.com/watch?v=1AwG0T4gaO0)
+ - [Numba](https://numba.pydata.org/) Numba is an open source JIT compiler that translates a subset of Python and NumPy code into fast machine code (Mark hotspot functions with decorators and they are compiled.). Numba supports Intel and AMD x86, POWER8/9, and ARM CPUs, NVIDIA and AMD GPUs. Relies on decorators to identify code sections to accelerate. Requires LLVM. Works with the standard CPython.  [Accelerating Python with the Numba (Video)](https://www.youtube.com/watch?v=eYIPEDnp5C4)
  - [PyCUDA](https://documen.tician.de/pycuda/tutorial.html)
    PyCUDA lets you access Nvidia's CUDA parallel computation API from Python.
  - [PyOpenCL](https://documen.tician.de/pyopencl/index.html)
    PyOpenCL lets you access the OpenCL parallel computation API from Python
-
- 
 
 
 ### Ensemble and Workflow tools
