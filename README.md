@@ -50,11 +50,25 @@ the ECP and broader scientific community. It is part of the [IDEAS-ECP](https://
 
 #### I/O:
  - [h5py](https://www.h5py.org/) The h5py package is a Pythonic interface to the HDF5 binary data format.
+
  
+### Python on Accelerators
+
+ - [Numba](https://numba.pydata.org/) Numba is an open source JIT compiler that translates a subset of Python and NumPy code into fast machine code (Mark hotspot functions with decorators and they are compiled.). Numba supports Intel and AMD x86, POWER8/9, and ARM CPUs, NVIDIA and AMD GPUs. Relies on decorators to identify code sections to accelerate.
+ - [Numba Presentation Scipy 2017 (Video)](https://www.youtube.com/watch?v=1AwG0T4gaO0)
+ 
+ - [PyCUDA](https://documen.tician.de/pycuda/tutorial.html)
+   PyCUDA lets you access Nvidia's CUDA parallel computation API from Python.
+
+ - [PyOpenCL](https://documen.tician.de/pyopencl/index.html)
+   PyOpenCL lets you access the OpenCL parallel computation API from Python
+
+ 
+
 
 ### Ensemble and Workflow tools
  
- - [Parsl](http://parsl-project.org) [video](https://www.youtube.com/watch?v=tHTt0Pyb4_M) Use Parsl with Jupyter notebooks to scale interactive analyses from laptops to supercomputers.
+ - [Parsl](http://parsl-project.org) Use Parsl with Jupyter notebooks to scale interactive analyses from laptops to supercomputers. [video](https://www.youtube.com/watch?v=tHTt0Pyb4_M)
  - [Balsam](https://www.alcf.anl.gov/balsam) Workflow system for managing large campaigns of interdependent jobs (unlimited queue depth). Balsam manages a database of jobs, with specified dependences. Jobs can be added to the database from anywhere on the system, for dynamic workflows.
  - [libEnsemble](https://libensemble.readthedocs.io) Library for dynamic ensembles using generator and simulator functions (e.g. using numerical optimization).
 
