@@ -1,7 +1,3 @@
----
-layout: default
----
-
 ## Python Software Engineering Training Materials
 
 This site provides a combination of original resources and recommended links for Python users in
