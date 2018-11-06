@@ -220,7 +220,7 @@ header {
     color: #FDFDFB;
     width:270px;
     float:left;
-    position:sticky;
+    position:fixed;
     border: 1px solid #000;
     -webkit-border-top-right-radius: 4px;
     -webkit-border-bottom-right-radius: 4px;
@@ -266,7 +266,7 @@ header ul {
 
 header li {
     list-style-type: none;
-    width:132px;
+    width:180px;
     height:15px;
     margin-bottom: 12px;
     line-height: 1em;
